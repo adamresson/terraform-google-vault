@@ -27,11 +27,6 @@ variable network {
   default     = "default"
 }
 
-variable subnetwork {
-  description = "The subnetwork to deploy to"
-  default     = "default"
-}
-
 variable region {
   description = "The region to create the instance in."
 }
