@@ -44,6 +44,8 @@ module "vault-server" {
   machine_type          = "${var.machine_type}"
   compute_image         = "debian-cloud/debian-9"
   service_account_email = "${google_service_account.vault-admin.email}"
+  network               = "${var.network}"
+  subnetwork            = "${var.subnetwork}"
 
   service_account_scopes = [
     "https://www.googleapis.com/auth/compute",
