@@ -37,7 +37,7 @@ data "template_file" "vault-config" {
 }
 
 module "vault-server" {
-  source                = "github.com/GoogleCloudPlatform/terraform-google-managed-instance-group"
+  source                = "github.com/adamresson/terraform-google-managed-instance-group"
   region                = "${var.region}"
   zone                  = "${var.zone}"
   name                  = "vault-${var.region}"
